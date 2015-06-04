@@ -1,5 +1,5 @@
 <?php
-class Usuario_model extends Model {
+class Usuario_Model extends Model {
 
    function __construct(){
       parent::Model();
