@@ -1,7 +1,4 @@
-<?php
-	/**
-	* sd
-	*/
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 	class Enlace extends CI_Controller
 	{
 		function index(){
@@ -49,18 +46,18 @@
 			if(count($enlaces) === 10){
 				//show_404('Enlace.php');	
 			}else{
-			$lista = $this->Lista_Model->getLista($id_lista);	
-			$id_usuario_lista = $lista->idUsuario;
-			$this->form_validation->set_rules('nombre','nombre','required');
-    		$this->form_validation->set_rules('direccion','direccion','required');
-			$data["enlaces"] = $enlaces;
-			$data["lista"] = $lista;
-			$data["id_usuario_logueado"] = $id_usuario;
-			$data["id_usuario_lista"] = $id_usuario_lista;
-			$this->load->view('templates/header');
-			$this->load->view('templates/navbar');
-			$this->load->view('enlace/Enlace',$data);
-			$this->load->view('templates/footer');
+				$lista = $this->Lista_Model->getLista($id_lista);	
+				$id_usuario_lista = $lista->idUsuario;
+				$this->form_validation->set_rules('nombre','nombre','required');
+	    		$this->form_validation->set_rules('direccion','direccion','required');
+				$data["enlaces"] = $enlaces;
+				$data["lista"] = $lista;
+				$data["id_usuario_logueado"] = $id_usuario;
+				$data["id_usuario_lista"] = $id_usuario_lista;
+				$this->load->view('templates/header');
+				$this->load->view('templates/navbar');
+				$this->load->view('enlace/Enlace',$data);
+				$this->load->view('templates/footer');
 			}
 
 		}
@@ -84,7 +81,6 @@
 				$this->load->view('templates/header');
 				$this->load->view('templates/navbar');
 				$this->load->view("enlace/ModificarEnlace",$data);
-				//$this->_render_page("enlace/ModificarEnlace",$data);
 				$this->load->view('templates/footer');
 
 			}else{
@@ -119,4 +115,3 @@
 			if (!$render) return $view_html;
 		}
 	}
-?>

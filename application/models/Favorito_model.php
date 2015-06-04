@@ -1,6 +1,5 @@
-<?php
-	
-	class Favorito_model extends CI_Controller
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+	class Favorito_Model extends CI_Controller
 	{
 		function agregarFavorito($data){				
 			return $this->db->insert('favoritos', $data);			
@@ -19,4 +18,3 @@
 			return $esFavorito;
 		}
 	}
-?>

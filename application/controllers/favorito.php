@@ -1,5 +1,4 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-
 	class Favorito extends CI_Controller
 	{
 		
@@ -34,12 +33,6 @@
 			$data = array(
 				'idUsuarioObservado' => $idUsuarioObservado,
 				'idUsuarioObservador' => $idUsuarioObservador,
-			);
-			
+			);	
 		}
-
-
 	}
-
-
-?>
