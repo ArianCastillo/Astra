@@ -1,177 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Pinterestellar - Planets of links</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="<?php echo base_url();?>assets/css/styles.css" rel="stylesheet">
-	</head>
-	<body>
-<div class="wrapper">
-    <div class="box">
-        <div class="row row-offcanvas row-offcanvas-left">
-                      
-          
-            <!-- sidebar -->
-            <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
-              
-              	<ul class="nav">
-          			<li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
-            	</ul>
-               
-                <ul class="nav hidden-xs" id="lg-menu">
-                    <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Featured</a></li>
-                    <li><a href="#stories"><i class="glyphicon glyphicon-list"></i> Mis listas</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-paperclip"></i> Saved</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Refresh</a></li>
-                </ul>
-                <ul class="list-unstyled hidden-xs" id="sidebar-footer">
-                    <li>
-                    </li>
-                </ul>
-              
-              	<!-- tiny only nav-->
-              <ul class="nav visible-xs" id="xs-menu">
-                  	<li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-                    <li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
-                  	<li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
-                    <li><a href="#" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
-                </ul>
-              
-            </div>
-            <!-- /sidebar -->
-          
-            <!-- main right col -->
-            <div class="column col-sm-10 col-xs-11" id="main">
-                
-                <!-- top nav -->
-              	<div class="navbar navbar-blue navbar-static-top">  
-                    <div class="navbar-header">
-                      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle</span>
-                        <span class="icon-bar"></span>
-          				<span class="icon-bar"></span>
-          				<span class="icon-bar"></span>
-                      </button>
-                      <a href="/" class="navbar-brand logo">b</a>
-                  	</div>
-                  	<nav class="collapse navbar-collapse" role="navigation">
-                    <form class="navbar-form navbar-left">
-                        <div class="input-group input-group-sm" style="max-width:360px;">
-                          <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                          <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                          </div>
-                        </div>
-                    </form>
-                    <ul class="nav navbar-nav">
-                      <li>
-                        <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
-                      </li>
-                      <li>
-                        <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Post</a>
-                      </li>
-                      <li>
-                        <a href="#"><span class="badge">badge</span></a>
-                      </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="">More</a></li>
-                          <li><a href="">More</a></li>
-                          <li><a href="">More</a></li>
-                          <li><a href="">More</a></li>
-                          <li><a href="">More</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  	</nav>
-                </div>
-                <!-- /top nav -->
-              
-                <div class="padding">
-                    <div class="full col-sm-9">
-                      
-                        <!-- Contenido -->                      
-                      	<div class="row">
-                          
-                         <!-- main col left --> 
-                         <div class="col-sm-5">
-                           <?php $this->load->view($main_content) ?> <!-- Súper importante -->                                                         		
-                         </div>
-                          
-                          <!-- main col right -->
-                          <div class="col-sm-7">                            
+<html lang="es">
 
-                            
-                          </div>
-                       </div><!--/row-->
-                      
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <a href="#">Twitter</a> <small class="text-muted">|</small> <a href="#">Facebook</a> <small class="text-muted">|</small> <a href="#">Google+</a>
-                          </div>
-                        </div>
-                      
-                        <div class="row" id="footer">    
-                          <div class="col-sm-6">
-                            
-                          </div>
-                          <div class="col-sm-6">
-                            <p>
-                            <a href="#" class="pull-right">©Copyright 2013</a>
-                            </p>
-                          </div>
-                        </div>
-                      
-                      <hr>
-                        
-                      
-                    </div><!-- /col-9 -->
-                </div><!-- /padding -->
-            </div>
-            <!-- /main -->
-          
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootflat.github.io/bootflat/css/bootflat.css">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </div>
-    </div>
-</div>
+        <!-- /#sidebar-wrapper -->
 
-
-<!--post modal-->
-<div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-  <div class="modal-content">
-      <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			Update Status
-      </div>
-      <div class="modal-body">
-          <form class="form center-block">
-            <div class="form-group">
-              <textarea class="form-control input-lg" autofocus="" placeholder="What do you want to share?"></textarea>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Simple Sidebar</h1>
+                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
             </div>
-          </form>
-      </div>
-      <div class="modal-footer">
-          <div>
-          <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Post</button>
-            <ul class="pull-left list-inline"><li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li><li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li><li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li></ul>
-		  </div>	
-      </div>
-  </div>
-  </div>
-</div>
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="<?php base_url();?>assets/js/bootstrap.min.js"></script>
-		<script src="<?php base_url();?>assets/js/scripts.js"></script>
-	</body>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!-- Bootflat's JS files.-->
+    <script src="https://bootflat.github.io/bootflat/js/icheck.min.js"></script>
+    <script src="https://bootflat.github.io/bootflat/js/jquery.fs.selecter.min.js"></script>
+    <script src="https://bootflat.github.io/bootflat/js/jquery.fs.stepper.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
 </html>

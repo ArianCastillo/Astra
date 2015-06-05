@@ -40,7 +40,8 @@
 				}
 
 				$this->load->view('templates/header');
-				$this->load->view('templates/navbar');
+				$this->load->view('templates/sidebar');
+				$this->load->view('templates/content');
 				$this->_render_page('auth/index', $this->data);
 				$this->load->view('templates/footer');
 				
@@ -99,7 +100,8 @@
 				);
 
 				$this->load->view('templates/header');
-				$this->load->view('templates/navbar');
+				$this->load->view('templates/sidebar');
+				$this->load->view('templates/content');
 				$this->load->view('auth/login', $this->data);
 				$this->load->view('templates/footer');			
 
@@ -166,7 +168,8 @@
 
 				//render
 				$this->load->view('templates/header');
-				$this->load->view('templates/navbar');
+				$this->load->view('templates/sidebar');
+				$this->load->view('templates/content');
 				$this->_render_page('auth/change_password', $this->data);
 				$this->load->view('templates/footer');	
 				
@@ -223,7 +226,8 @@
 				//set any errors and display the form
 				$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 				$this->load->view('templates/header');
-				$this->load->view('templates/navbar');
+				$this->load->view('templates/sidebar');
+				$this->load->view('templates/content');
 				$this->_render_page('auth/forgot_password', $this->data);
 				$this->load->view('templates/footer');				
 				
@@ -318,7 +322,8 @@
 
 					//render
 					$this->load->view('templates/header');
-					$this->load->view('templates/navbar');
+					$this->load->view('templates/sidebar');
+					$this->load->view('templates/content');
 					$this->_render_page('auth/reset_password', $this->data);
 					$this->load->view('templates/footer');
 					
@@ -413,7 +418,8 @@
 				$this->data['user'] = $this->ion_auth->user($id)->row();
 
 				$this->load->view('templates/header');
-				$this->load->view('templates/navbar');
+				$this->load->view('templates/sidebar');
+				$this->load->view('templates/content');
 				$this->_render_page('auth/deactivate_user', $this->data);
 				$this->load->view('templates/footer');
 				
@@ -482,7 +488,8 @@
 				//redirect them back to the admin page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
 				$this->load->view('templates/header');
-				$this->load->view('templates/navbar');
+				$this->load->view('templates/sidebar');
+				$this->load->view('templates/content');
 				$this->load->view('auth/success');
 				$this->load->view('templates/footer');
 			}
@@ -520,7 +527,8 @@
 				);
 
 				$this->load->view('templates/header');
-				$this->load->view('templates/navbar');
+				$this->load->view('templates/sidebar');
+				$this->load->view('templates/content');
 				$this->_render_page('auth/create_user', $this->data);
 				$this->load->view('templates/footer');
 				
@@ -652,7 +660,8 @@
 			);
 
 			$this->load->view('templates/header');
-			$this->load->view('templates/navbar');
+			$this->load->view('templates/sidebar');
+			$this->load->view('templates/content');
 			$this->_render_page('auth/edit_user', $this->data);
 			$this->load->view('templates/footer');
 			
@@ -809,7 +818,8 @@
 		$data['query'] = $this->ion_auth_model->get_search();
 
 		$this->load->view('templates/header');
-		$this->load->view('templates/navbar');
+		$this->load->view('templates/sidebar');
+		$this->load->view('templates/content');
 		$this->load->view('auth/users', $data);
 		$this->load->view('templates/footer');		
 		}
@@ -842,7 +852,8 @@
 				);
 
 				$this->load->view('templates/header');
-				$this->load->view('templates/navbar');
+				$this->load->view('templates/sidebar');
+				$this->load->view('templates/content');
 				$this->load->view('auth/show', $data);
 				$this->load->view('templates/footer');	
 			}else{

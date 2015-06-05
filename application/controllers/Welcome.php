@@ -27,10 +27,10 @@
 				$data['logged_in'] = true;
 			}
 
-			$this->load->view('templates/header');
-			$this->load->view('templates/navbar', $data);
+			/*$this->load->view('templates/header');
+			$this->load->view('templates/sidebar', $data);
 			$this->load->view('index');
-			$this->load->view('templates/footer');
-			
+			$this->load->view('templates/footer');*/
+			$this->load->view('landpage');
 		}
 	}
