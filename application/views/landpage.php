@@ -102,9 +102,16 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <h2>Features</h2>
+                    <div class="col-md-4">
+                        <h4>Feature 1</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Feature 2</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Feature 3</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,11 +137,45 @@
                     </li>
                 </ul>
             </div> !-->
-            <div class="col-md-6">
-                <h2>Sign up</h2>
-            </div>
-            <div class="col-md-6">
-                <h2>Sign in</h2>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>What are you waiting for?</h2>
+                <h3>Sign up</h3>
+                <?php echo form_open("auth/create_user");?>
+                    <div class="form-group">
+                      <h4><?php echo form_label('Username: ', 'username', array('class' => 'col-lg-2')); ?></h4>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="username" name="username" value="<?php echo set_value('username') ?>">
+                            <?php echo form_error('username'); ?>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                      <h4><?php echo form_label('Email: ', 'email', array('class' => 'col-lg-2')); ?></h4>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="email" name="email" value="<?php echo set_value('email') ?>">
+                            <?php echo form_error('email'); ?>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                      <h4><?php echo form_label('Password: ', 'password', array('class' => 'col-lg-2')); ?></h4>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="password" name="password" value="<?php echo set_value('password') ?>">
+                            <?php echo form_error('password'); ?>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                      <h4><?php echo form_label('Password Confirm: ', 'password_confirm', array('class' => 'col-lg-2')); ?></h4>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="password_confirm" name="password_confirm" value="<?php echo set_value('password_confirm') ?>">
+                            <?php echo form_error('password_confirm'); ?>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button>
+                    <p><?php echo form_submit('submit', lang('create_user_submit_btn'));?></p>
+
+                <?php echo form_close();?>
             </div>
         </div>
     </section>
