@@ -1,3 +1,6 @@
+# MAKE SURE TO LEAVE THE NEXT TWO LINES HERE.
+# BEGIN DENY LIST --
+# END DENY LIST --
 RewriteEngine on
-RewriteCond $1 !^(index.php|css|js|images|assets)
-RewriteRule ^(.*)$ /astra/index.php/$1 [L]
+RewriteCond $1 !^(index\.php|images|php|script|styles|js|css)
+#RewriteRule ^(.*)$ /index.php/$1 [L,QSA]
